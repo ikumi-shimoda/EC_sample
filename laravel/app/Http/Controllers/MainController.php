@@ -11,10 +11,10 @@ class MainController extends Controller
     private $info;
     private $product;
 
-    public function __construct()
+    public function __construct(Info $info, Product $product)
     {
-        $this->info = new Info;
-        $this->product = new Product;
+        $this->info = $info;
+        $this->product = $product;
     }
 
     public function index()
@@ -22,5 +22,10 @@ class MainController extends Controller
         $infos = $this->info->all();
         $products = $this->product->all();
         return view('ec.index', compact('infos', 'products'));
+    }
+
+    public function search()
+    {
+        //
     }
 }

@@ -13,14 +13,14 @@
   <header>
     <div class="inner">
       <ul class="header_nav">
-        <li>top</li>
+        <li><a href="{{ route('home') }}">top</a></li>
         <li>category</li>
         <li>news</li>
         <li>contact</li>
         <li>
-          <form action="" method="POST">
+          <form action="{{ route('search.index') }}" method="GET">
             <div class="serch">
-              <input name="serch" type="serch" placeholder="Search...">
+              <input name="name" type="serch" placeholder="Search...">
               <input type="submit" value="&#xf002;" class="fas">
             </div>
           </form>

@@ -1,4 +1,4 @@
-@extends ('ec.app')
+@extends ('common.app')
 @section ('main')
 
   <main>
@@ -6,15 +6,15 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img class="top_img" src="{{ asset('/img/main1.jpg') }}" alt="トップ画像">
-          <a href="/sale"><p class="sall_link">See More</p></a>
+          <a href="{{ route('product.sale') }}"><p class="sale_link">See More</p></a>
         </div>
         <div class="swiper-slide">
           <img class="top_img" src="{{ asset('/img/main2.jpg') }}" alt="トップ画像">
-          <a href="/sale"><div class="sall_link">See More</div></a>
+          <a href="{{ route('product.sale') }}"><div class="sale_link">See More</div></a>
         </div>
         <div class="swiper-slide">
           <img class="top_img" src="{{ asset('/img/main3.jpg') }}" alt="トップ画像">
-          <a href="/sale"><div class="sall_link">See More</div></a>
+          <a href="{{ route('product.sale') }}"><div class="sale_link">See More</div></a>
         </div>
         ...
       </div>

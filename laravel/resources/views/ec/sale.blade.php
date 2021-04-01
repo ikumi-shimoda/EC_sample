@@ -1,4 +1,4 @@
-@extends ('ec.app')
+@extends ('common.app')
 @section ('main')
 
 <main>

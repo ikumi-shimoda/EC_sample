@@ -15,5 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'MainController@index');
-Route::get('sale', 'ProductController@sale');
+Route::get('/', 'MainController@index')->name('home');
+Route::get('sale', 'ProductController@sale')->name('product.sale');
+Route::get('search', 'SearchController@index')->name('search.index');
+// Route::get('/admin', 'Auth\LoginController')->name('admin.index');
+

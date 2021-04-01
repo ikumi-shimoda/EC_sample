@@ -44,7 +44,7 @@ main {
   position: relative;
 }
 
-.sall_link {
+.sale_link {
   position: absolute;
   background: #d1ae15;
   color: #f5f3f2;
@@ -56,7 +56,7 @@ main {
   padding: 10px;
 }
 
-.sall_link:hover {
+.sale_link:hover {
   opacity: 1;
 }
 
