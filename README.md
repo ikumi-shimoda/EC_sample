@@ -21,3 +21,6 @@ $ docker-compose exec web php artisan migrate
 ```
 $ docker-compose exec web php artisan db:seeder
 ```
+```
+=======
+```
