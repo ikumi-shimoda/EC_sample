@@ -18,7 +18,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./laravel:/var/www
+      - ./laravel:/var/www/laravel
       - ./nginx.conf:/etc/nginx/sites-enabled/default
 
   phpMyAdmin:
@@ -27,7 +27,7 @@ services:
       - "3333:80"
     environment:
       - PMA_ARBITRARY=1
-      - PMA_HOST=mysql
+      - PMA_HOST=db
       - PMA_USER=root
       - PMA_PASSWORD=root
     links:

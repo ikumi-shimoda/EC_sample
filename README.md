@@ -1,11 +1,23 @@
-# 現場を想定して作成したECサイト
+## Installation
 
-## 練習したい項目
-- 詳細設計書
-- テスト仕様書
-- Dockerを使用した仮想環境構築
-- お知らせページ一覧機能の開発
-- キャンペーン表示機能の改修
-- 問い合わせ機能のリニューアル
-- サイト内検索機能のロジック改修
-- 担当機能のテスト仕様書作成、テスト実行
+### docker-compose
+```
+$ cd ec_sample/laravel
+$ composer install
+```
+
+```
+# /ec_sample
+
+$ docker-compose up -d
+```
+
+### Container setup
+```
+$ docker-compose exec web php artisan key:generate
+$ docker-compose exec web php artisan migrate
+```
+### Seeder
+```
+$ docker-compose exec web php artisan db:seeder
+```
